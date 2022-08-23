@@ -5,7 +5,12 @@ const PORT = process.env.PORT || 2000
 const app = express();
 
 app.get('/',(req, res)=>{
-    res.json({Message: 'Application running', domain:"HERKOU"})
+    res.json({
+        Message: 'Application running',
+        domain:"HERKOU",
+        author:"Suresh Ghimire"
+},
+    )
 })
 
 
